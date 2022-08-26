@@ -1,0 +1,196 @@
+doctype html
+html(lang="ru")
+  include html/head
+  body
+    include html/header
+    main
+      section.promo
+        .container.swiper.js-promo-slider
+          .swiper-wrapper
+            .swiper-slide.promo__slide
+              .promo__text
+                h1.main-title Тверь полимер сервис
+                p Тверь Полимер Сервис работает на рынке полимеров уже более 10 лет и является одним и крупнейших Российских производителей листовых полимеров
+                a.btn(href="#") Подробнее о компании
+              img.promo__img(src="@img/promo-img.png", alt="")
+            .swiper-slide.promo__slide
+              .promo__text
+                h2.main-title Тверь полимер сервис
+                p Тверь Полимер Сервис работает на рынке полимеров уже более 10 лет и является одним и крупнейших Российских производителей листовых полимеров
+                a.btn(href="#") Подробнее о компании
+              img.promo__img(src="@img/promo-img.png", alt="")
+            .swiper-slide.promo__slide
+              .promo__text
+                h2.main-title Тверь полимер сервис
+                p Тверь Полимер Сервис работает на рынке полимеров уже более 10 лет и является одним и крупнейших Российских производителей листовых полимеров
+                a.btn(href="#") Подробнее о компании
+              img.promo__img(src="@img/promo-img.png", alt="")
+          .js-promo-pagination.promo__pagination
+      section.advantages
+        .container
+          h2.section-title Преимущества
+          p.advantages__text Мы заботимся о своих клиентах, обладаем огромным опытом для решения их самых сложных задач, всегда стремимся исключительно к долгосрочному и взаимовыгодному сотрудничеству
+          ul.advantages__list
+            li.advantages__list-item
+              img(src="@img/icons/icons.svg#i-ad-1", alt="", width="39", height="39")
+              h3.advantages__list-item-title Изготовление деталей по индивидуальному заказу
+              p.advantages__list-item-text По техническим заданиям заказчиков осуществляется изготовление отдельных деталей из пластиков  ZEDEX, INKULEN, INKUMER  без ограничения минимального или максимального объема партии изделий
+            li.advantages__list-item
+              img(src="@img/icons/icons.svg#i-ad-2", alt="", width="39", height="39")
+              h3.advantages__list-item-title Оптимальное соотношение цены и качества
+              p.advantages__list-item-text Крупным заказчикам гарантированы лучшие на российском рынке цены пластиков ZEDEX, INKULEN, INKUMER, а в зависимости от объема и периодичности закупок предоставляются прогрессивные скидки на все товары
+            li.advantages__list-item
+              img(src="@img/icons/icons.svg#i-ad-3", alt="", width="39", height="39")
+              h3.advantages__list-item-title Официальный дилер на территории Твери 
+              p.advantages__list-item-text Работая с официальным сертифицированным дилером, вы гарантированно получаете оригинальные материалы по цене производителя, не переплачивая и точно в срок
+            li.advantages__list-item
+              img(src="@img/icons/icons.svg#i-ad-4", alt="", width="39", height="39")
+              h3.advantages__list-item-title Эффективные и высококачественные материалы
+              p.advantages__list-item-text Наши полимеры разработанные в Германии, производятся единственным российским предприятием, являются самыми эффективными материалами для изготовления деталей узлов трения скольжения и для футеровки поверхностей
+      section.brands
+        .container
+          .swiper.js-brands-slider
+            ul.swiper-wrapper.brands__list
+              li.swiper-slide.brands__list-item
+                img(src="@img/brands-1.png", alt="", height="146")
+              li.swiper-slide.brands__list-item
+                img(src="@img/brands-2.png", alt="", height="146")
+              li.swiper-slide.brands__list-item
+                img(src="@img/brands-3.png", alt="", height="146")
+              li.swiper-slide.brands__list-item
+                img(src="@img/brands-4.png", alt="", height="146")
+              li.swiper-slide.brands__list-item
+                img(src="@img/brands-1.png", alt="", height="146")
+              li.swiper-slide.brands__list-item
+                img(src="@img/brands-2.png", alt="", height="146")
+              li.swiper-slide.brands__list-item
+                img(src="@img/brands-3.png", alt="", height="146")
+              li.swiper-slide.brands__list-item
+                img(src="@img/brands-4.png", alt="", height="146")
+              li.swiper-slide.brands__list-item
+                img(src="@img/brands-1.png", alt="", height="146")
+            .js-brands-pagination.brands__pagination
+      section.blanks
+        .container
+          h2.section-title Заготовки
+          p.blanks__text Мы заботимся о своих клиентах, обладаем огромным опытом для решения их самых сложных задач, всегда стремимся исключительно к долгосрочному и взаимовыгодному сотрудничеству
+            ul.blanks__list
+              li.blanks__list-item
+                a(href="#")
+                  img.blanks__list-item-img(src="@img/products-1.png", alt="", width="263", height="243")
+                  h3.blanks__list-item-title Прутки
+              li.blanks__list-item
+                a(href="#")
+                  img.blanks__list-item-img(src="@img/products-2.png", alt="", width="263", height="243")
+                  h3.blanks__list-item-title Листы
+              li.blanks__list-item
+                a(href="#")
+                  img.blanks__list-item-img(src="@img/products-3.png", alt="", width="263", height="243")
+                  h3.blanks__list-item-title Трубы
+              li.blanks__list-item
+                a(href="#")
+                  img.blanks__list-item-img(src="@img/products-4.png", alt="", width="263", height="243")
+                  h3.blanks__list-item-title Гранулят
+      section.partners
+        .container
+          h2.section-title Наши партнеры
+          .swiper.js-partners-slider.partners__slider
+            ul.swiper-wrapper.partners__list
+              li.swiper-slide.partners__list-item
+                a(href="#" ) 
+                  img(src="@img/brands-1.png", alt="", height="146")
+              li.swiper-slide.partners__list-item
+                a(href="#" ) 
+                  img(src="@img/brands-2.png", alt="", height="146")
+              li.swiper-slide.partners__list-item
+                a(href="#" ) 
+                  img(src="@img/brands-3.png", alt="", height="146")
+              li.swiper-slide.partners__list-item
+                a(href="#" ) 
+                  img(src="@img/brands-4.png", alt="", height="146")
+              li.swiper-slide.partners__list-item
+                a(href="#" ) 
+                  img(src="@img/brands-1.png", alt="", height="146")
+              li.swiper-slide.partners__list-item
+                a(href="#" ) 
+                  img(src="@img/brands-2.png", alt="", height="146")
+              li.swiper-slide.partners__list-item
+                a(href="#" ) 
+                  img(src="@img/brands-3.png", alt="", height="146")
+              li.swiper-slide.partners__list-item
+                a(href="#" ) 
+                  img(src="@img/brands-4.png", alt="", height="146")
+              li.swiper-slide.partners__list-item
+                a(href="#" ) 
+                  img(src="@img/brands-4.png", alt="", height="146")
+            .js-partners-pagination.partners__pagination
+      section.text-block
+        .container
+          .text-block__content
+            h2.section-title Текстовый блок
+            p.text-block__text Весь товар в наличии Вы можете получить в этот же день благодаря огромным складским полощадям «Алтай-Сервис» - более 50 000 м2. Мы стараемся хранить максимально большое количество ассортимента в наличии, постоянно пополняем и дополняем его.
+            p.text-block__text Весь товар в наличии Вы можете получить в этот же день благодаря огромным складским полощадям «Алтай-Сервис» - более 50 000 м2. Мы стараемся хранить максимально большое количество ассортимента в наличии, постоянно пополняем и дополняем его.
+            a.btn.text-block__btn(href="#") Подробнее о компании
+          img.text-block__img(src="@img/text-img.png", alt="", width="461", height="370")
+      section.news
+        .container
+          h2.section-title Новости
+          ul.article__list
+            li.article__list-item
+              img.article__img(src="@img/news-1.png", alt="", width="361", height="210")
+              .article__content
+                h3.article__title Профили и направляюющие INKULEN PE 
+                time.article__date(datetime="2022-12-01") 01.12.22
+                p.article__text Весь товар в наличии Вы можете получить в этот же день благодаря огромным складским полощадям «Алтай-Сервис»...
+                a.article__link(href="#") Подробнее
+            li.article__list-item
+              img.article__img(src="@img/news-1.png", alt="", width="361", height="210")
+              .article__content
+                h3.article__title Профили и направляюющие INKULEN PE 
+                time.article__date(datetime="2022-12-01") 01.12.22
+                p.article__text Весь товар в наличии Вы можете получить в этот же день благодаря огромным складским полощадям «Алтай-Сервис»...
+                a.article__link(href="#") Подробнее
+            li.article__list-item
+              img.article__img(src="@img/news-1.png", alt="", width="361", height="210")
+              .article__content
+                h3.article__title Профили и направляюющие INKULEN PE 
+                time.article__date(datetime="2022-12-01") 01.12.22
+                p.article__text Весь товар в наличии Вы можете получить в этот же день благодаря огромным складским полощадям «Алтай-Сервис»...
+                a.article__link(href="#") Подробнее
+          a.btn.btn--full(href="#") Все новости
+      section.articles
+        .container
+          h2.section-title Статьи
+          ul.article__list
+            li.article__list-item
+              img.article__img(src="@img/news-1.png", alt="", width="361", height="210")
+              .article__content
+                h3.article__title Профили и направляюющие INKULEN PE 
+                time.article__date(datetime="2022-12-01") 01.12.22
+                p.article__text Весь товар в наличии Вы можете получить в этот же день благодаря огромным складским полощадям «Алтай-Сервис»...
+                a.article__link(href="#") Подробнее
+            li.article__list-item
+              img.article__img(src="@img/news-1.png", alt="", width="361", height="210")
+              .article__content
+                h3.article__title Профили и направляюющие INKULEN PE 
+                time.article__date(datetime="2022-12-01") 01.12.22
+                p.article__text Весь товар в наличии Вы можете получить в этот же день благодаря огромным складским полощадям «Алтай-Сервис»...
+                a.article__link(href="#") Подробнее
+            li.article__list-item
+              img.article__img(src="@img/news-1.png", alt="", width="361", height="210")
+              .article__content
+                h3.article__title Профили и направляюющие INKULEN PE 
+                time.article__date(datetime="2022-12-01") 01.12.22
+                p.article__text Весь товар в наличии Вы можете получить в этот же день благодаря огромным складским полощадям «Алтай-Сервис»...
+                a.article__link(href="#") Подробнее
+          a.btn.btn--full(href="#") Все статьи
+      section.subscription
+        .container
+          .subscription__flex
+            p.subscription__text Подпишитесь на рассылку и будьте в курсе свежих спецпредложений!
+            form.subscription__form
+              input.subscription__input(type="email" placeholder="Ваш Email")
+              input.btn.btn--large(type="submit" value="Подписаться")
+    include html/footer
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js")
+    script(src="js/app.min.js")
