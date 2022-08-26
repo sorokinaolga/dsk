@@ -6,14 +6,14 @@ $(document).ready(function () {
 
   $('.menu-wrapper').on('click', function() {
     $('.hamburger-menu').toggleClass('animate');
-    $('.header__bottom').slideToggle();
+    $('.header__main').slideToggle();
   })
 
   $(window).resize(function () {
     windowW = $(window).width();
     if (windowW > menuBreakpoint) {
       $('.hamburger-menu').removeClass('animate');
-      $('.header__bottom').attr('style', '');
+      $('.header__main').attr('style', '');
     }
   });
 
