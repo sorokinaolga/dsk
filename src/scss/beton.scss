@@ -1,0 +1,94 @@
+.beton {
+  &__list {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  &__item {
+    font-family: $ff-accent-bold;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    color: #2B2A26;
+
+    &:not(.beton__item--active):hover {
+      opacity: 0.7;
+    }
+
+    &--active.beton__item {
+      a {
+        background: #FBC30A;
+        pointer-events: none;
+      }
+    }
+
+    a {
+      display: block;
+      padding: 15px 0;
+      min-width: 277px;
+      filter: drop-shadow(0px 0px 4px rgba(0, 0, 0, 0.25));
+      background: $color-light;
+      border-radius: 10px;
+      text-align: center;
+    }
+  }
+
+  &-main {
+    padding: 60px 0 100px;
+  }
+
+  &-main__descriptions {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  &-main__description {
+    background: #FFDC68;
+    border-radius: 10px;
+    width: calc(50% - 10px);
+    text-align: center;
+    margin: 0;
+    padding: 30px;
+  }
+  &-main__des-title {
+    font-family: $ff-accent-bold;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    text-transform: capitalize;
+    color: #2B2A26;
+    margin: 0 0 10px 0;
+    padding: 0;
+  }
+  &-main__des-text {
+    font-family: $ff-accent;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #2B2A26;
+    margin: 0 0 15px 0;
+    padding: 0;
+  }
+  &-main__des-price {
+    font-family: $ff-accent-bold;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    color: #2B2A26;
+    margin: 0;
+    padding: 0;
+
+    span {
+      font-family: $ff-accent;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 19.5px;
+    }
+  }
+}

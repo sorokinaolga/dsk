@@ -1,0 +1,111 @@
+doctype html
+html(lang="ru")
+  include html/head
+  body
+    include html/header
+    main
+      section.page-top
+        .container
+          ol.breadcrumbs
+            li.breadcrumbs__link
+              a(href="index.html") Главная
+            li.breadcrumbs__link
+              a(href="javascript:void(0)") Продукция
+            li.breadcrumbs__link
+              span Бетон
+          ul.beton__list
+            li.beton__item
+              a(href="cement.html") Раствор цементный
+            li.beton__item.beton__item--active
+              a(href="beton.html") Бетон
+            li.beton__item
+              a(href="asphalt.html") Асфальтобетонная смесь
+      section.beton-main
+        .container
+          h1.section-title Бетон
+          .table__container
+            h3.table__title Бетон строительный
+            table.table
+              thead
+                tr
+                  th Марка (класс) бетона ГОСТ
+                  th Норма подвижности
+                  th Марка по водонепроницаемости W
+                  th Цена с НДС за 1 м³
+              tbody
+                tr
+                  td(data-header="Марка (класс) бетона ГОСТ") Бетон М-100 (В 7.5)
+                  td(data-header="Норма подвижности") Пк3
+                  td(data-header="Марка по водонепроницаемости W") —
+                  td(data-header="Цена с НДС за 1 м³") 4 250
+                tr
+                  td(data-header="Марка (класс) бетона ГОСТ") Бетон М-150 (В 12.5)
+                  td(data-header="Норма подвижности") Пк4
+                  td(data-header="Марка по водонепроницаемости W") W4  F100
+                  td(data-header="Цена с НДС за 1 м³") 4 400
+                tr
+                  td(data-header="Марка (класс) бетона ГОСТ") Бетон М-200 (В 15)
+                  td(data-header="Норма подвижности") Пк4
+                  td(data-header="Марка по водонепроницаемости W") W4  F100 / W6 F150
+                  td(data-header="Цена с НДС за 1 м³") 4 600
+                tr
+                  td(data-header="Марка (класс) бетона ГОСТ") Бетон М-250 (В 20)
+                  td(data-header="Норма подвижности") Пк4
+                  td(data-header="Марка по водонепроницаемости W") W4  F100 / W6 F150
+                  td(data-header="Цена с НДС за 1 м³") 4 850
+                tr
+                  td(data-header="Марка (класс) бетона ГОСТ") Бетон М-300 (В 22.5)
+                  td(data-header="Норма подвижности") Пк4
+                  td(data-header="Марка по водонепроницаемости W") W4  F100
+                  td(data-header="Цена с НДС за 1 м³") 5 050
+                tr
+                  td(data-header="Марка (класс) бетона ГОСТ") Бетон М-350 (В 30)
+                  td(data-header="Норма подвижности") Пк4
+                  td(data-header="Марка по водонепроницаемости W") W6  F150 / W4 F75
+                  td(data-header="Цена с НДС за 1 м³") 5 200
+                tr
+                  td(data-header="Марка (класс) бетона ГОСТ") Бетон М-450 (В 35)
+                  td(data-header="Норма подвижности") Пк4
+                  td(data-header="Марка по водонепроницаемости W") W6  F150 / W8 F100
+                  td(data-header="Цена с НДС за 1 м³") 5 400
+                tr
+                  td(data-header="Марка (класс) бетона ГОСТ") Бетон М-450 (В 35)
+                  td(data-header="Норма подвижности") Пк4
+                  td(data-header="Марка по водонепроницаемости W") W6  F150
+                  td(data-header="Цена с НДС за 1 м³") 5 700
+          ul.beton-main__descriptions
+            li.beton-main__description
+              h3.beton-main__des-title Доставка:
+              p.beton-main__des-text до Красноармейского, Кировского, Советского района 
+              p.beton-main__des-price 3 500 - 4 000 руб
+            li.beton-main__description
+              h3.beton-main__des-title Простой: 
+              p.beton-main__des-text  Свыше 30 минут
+              p.beton-main__des-price  1 500 руб. 
+                span за каждый час
+      section.form
+        .container
+          h2.section-title.section-title--accent Форма обратной связи
+          .form__remarks
+            p * Обязательные поля для заполнения
+            p ** Обязательные поля на выбор
+          form.form__callback
+            .form__input-container
+              input.form__input(type="text", name="", placeholder="Имя*")
+              input.form__input(type="tel", name="", placeholder="Телефон**")
+              input.form__input(type="email", name="", placeholder="E-mail**")
+              input.form__input(type="text", name="", placeholder="Комментарий")
+            p.form__callback-text Нажимая на кнопку, Вы соглашаетесь с Политикой конфиденциальности
+            button.btn.btn--main(type="submit") Отправить заявку
+      section.block-with-text
+        .container
+          .block-with-text__text
+            h2.section-title Текстовый блок
+            p.block-with-text__strong Цемент — искусственное неорганическое гидравлическое вяжущее вещество. Один из основных строительных материалов.
+            p.block-with-text__usual При взаимодействии с водой, водными растворами солей и другими жидкостями образует пластичную массу, которая затем затвердевает и превращается в камневидное тело. В основном используется для изготовления бетона и строительных растворов. 
+            p.block-with-text__usual Цемент является гидравлическим вяжущим и обладает способностью набирать прочность во влажных условиях, чем принципиально отличается от некоторых других минеральных вяжущих — (воздушной извести), которые твердеют только на воздухе.
+          .block-with-text__img
+            img(src="./img/text-img.jpg", width="553", height="396", alt="")
+    include html/footer
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js")
+    script(src="js/app.min.js")
