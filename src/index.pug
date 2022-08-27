@@ -29,53 +29,59 @@ html(lang="ru")
       section.advantages
         .container
           h2.section-title Преимущества
-          p.advantages__text Мы заботимся о своих клиентах, обладаем огромным опытом для решения их самых сложных задач, всегда стремимся исключительно к долгосрочному и взаимовыгодному сотрудничеству
           ul.advantages__list
             li.advantages__list-item
-              img(src="@img/icons/icons.svg#i-ad-1", alt="", width="39", height="39")
-              h3.advantages__list-item-title Изготовление деталей по индивидуальному заказу
-              p.advantages__list-item-text По техническим заданиям заказчиков осуществляется изготовление отдельных деталей из пластиков  ZEDEX, INKULEN, INKUMER  без ограничения минимального или максимального объема партии изделий
+              .advantages__img
+                img(src="@img/icons/icons.svg#i-ad-1", alt="", height="36")
+              h3.advantages__list-item-title 
+                | Продукция от 
+                <br/> производителя
+              p.advantages__list-item-text В строительстве наиболее широко используют бетоны, в строительстве широко..
             li.advantages__list-item
-              img(src="@img/icons/icons.svg#i-ad-2", alt="", width="39", height="39")
-              h3.advantages__list-item-title Оптимальное соотношение цены и качества
-              p.advantages__list-item-text Крупным заказчикам гарантированы лучшие на российском рынке цены пластиков ZEDEX, INKULEN, INKUMER, а в зависимости от объема и периодичности закупок предоставляются прогрессивные скидки на все товары
+              .advantages__img
+                img(src="@img/icons/icons.svg#i-ad-2", alt="", height="36")
+              h3.advantages__list-item-title
+                | Высокое 
+                <br/> качество
+              p.advantages__list-item-text В строительстве наиболее широко используют бетоны, в строительстве широко..
             li.advantages__list-item
-              img(src="@img/icons/icons.svg#i-ad-3", alt="", width="39", height="39")
-              h3.advantages__list-item-title Официальный дилер на территории Твери 
-              p.advantages__list-item-text Работая с официальным сертифицированным дилером, вы гарантированно получаете оригинальные материалы по цене производителя, не переплачивая и точно в срок
-            li.advantages__list-item
-              img(src="@img/icons/icons.svg#i-ad-4", alt="", width="39", height="39")
-              h3.advantages__list-item-title Эффективные и высококачественные материалы
-              p.advantages__list-item-text Наши полимеры разработанные в Германии, производятся единственным российским предприятием, являются самыми эффективными материалами для изготовления деталей узлов трения скольжения и для футеровки поверхностей
+              .advantages__img
+                img(src="@img/icons/icons.svg#i-ad-3", alt="", height="36")
+              h3.advantages__list-item-title
+                | Гарантия качества 
+                <br/> и оказанных услуг
+              p.advantages__list-item-text В строительстве наиболее широко используют бетоны, в строитель
       section.products
         .container
-          h2.section-title Заготовки
-          p.blanks__text Мы заботимся о своих клиентах, обладаем огромным опытом для решения их самых сложных задач, всегда стремимся исключительно к долгосрочному и взаимовыгодному сотрудничеству
-            ul.blanks__list
-              li.blanks__list-item
-                a(href="#")
-                  img.blanks__list-item-img(src="@img/products-1.png", alt="", width="263", height="243")
-                  h3.blanks__list-item-title Прутки
-              li.blanks__list-item
-                a(href="#")
-                  img.blanks__list-item-img(src="@img/products-2.png", alt="", width="263", height="243")
-                  h3.blanks__list-item-title Листы
-              li.blanks__list-item
-                a(href="#")
-                  img.blanks__list-item-img(src="@img/products-3.png", alt="", width="263", height="243")
-                  h3.blanks__list-item-title Трубы
-              li.blanks__list-item
-                a(href="#")
-                  img.blanks__list-item-img(src="@img/products-4.png", alt="", width="263", height="243")
-                  h3.blanks__list-item-title Гранулят
+          h2.section-title.section-title--accent Продукция
+          ul.products__list
+            li.products__list-item
+              a(href="#")
+                img.products__list-item-img(src="@img/products-1.png", alt="", width="338", height="225")
+                h3.products__list-item-title Раствор цементный
+                p.products__list-item-text Подробнее
+            li.products__list-item
+              a(href="#")
+                img.products__list-item-img(src="@img/products-2.png", alt="", width="338", height="225")
+                h3.products__list-item-title Бетон
+                p.products__list-item-text Подробнее
+            li.products__list-item
+              a(href="#")
+                img.products__list-item-img(src="@img/products-3.png", alt="", width="338", height="225")
+                h3.products__list-item-title Асфальтобетонная смесь
+                p.products__list-item-text Подробнее
       section.text-block
         .container
+          h2.section-title Текстовый блок и видео
           .text-block__content
-            h2.section-title Текстовый блок
-            p.text-block__text Весь товар в наличии Вы можете получить в этот же день благодаря огромным складским полощадям «Алтай-Сервис» - более 50 000 м2. Мы стараемся хранить максимально большое количество ассортимента в наличии, постоянно пополняем и дополняем его.
-            p.text-block__text Весь товар в наличии Вы можете получить в этот же день благодаря огромным складским полощадям «Алтай-Сервис» - более 50 000 м2. Мы стараемся хранить максимально большое количество ассортимента в наличии, постоянно пополняем и дополняем его.
-            a.btn.text-block__btn(href="#") Подробнее о компании
-          img.text-block__img(src="@img/text-img.png", alt="", width="461", height="370")
+            .text-block__video-container
+              <iframe class="text-block__video" width="443" height="249" src="https://www.youtube.com/embed/W1Hy03GUudY" title="TIME LAPSE: УКЛАДКА АСФАЛЬТА ЗА 6 МИНУТ. ТЕХНОЛОГИЯ УКЛАДКИ АСФАЛЬТА в КАНАДЕ." frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            .text-block__text-container
+              p.text-block__text 
+                strong Бетон 
+                | — искусственный каменный строительный материал, получаемый в результате формования и затвердевания рационально подобранной, тщательно перемешанной и уплотнённой смеси из минерального (например, цемент) или органического вяжущего вещества, крупного или мелкого заполнителей, воды. 
+              p.text-block__text В ряде случаев может иметь в составе специальные добавки, а также не содержать воды (например, асфальтобетон).
+              p.text-block__text В строительстве наиболее широко используют бетоны, изготовленные на цементах или других неорганических вяжущих.
     include html/footer
     script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js")
     script(src="js/app.min.js")

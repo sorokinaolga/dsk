@@ -65,7 +65,7 @@ a {
 
   &:hover {
     background: $color-dark;
-    color: $color-light;
+    color: #FBC30A;
   }
 
   // &:disabled {
@@ -73,22 +73,22 @@ a {
   //   opacity: 0.6;
   // }
 
-  &--full {
-    text-align: center;
-    border: 1px solid #A9A9A9;
-    color: #A9A9A9;
-    background-color: transparent;
-    width: 100%;
+  // &--full {
+  //   text-align: center;
+  //   border: 1px solid #A9A9A9;
+  //   color: #A9A9A9;
+  //   background-color: transparent;
+  //   width: 100%;
 
-    &:hover {
-      color: $color-light;
-      background-color: #A9A9A9;
-    }
-  }
+  //   &:hover {
+  //     color: $color-light;
+  //     background-color: #A9A9A9;
+  //   }
+  // }
 
-  &--large {
-    padding: 12px 58px;
-  }
+  // &--large {
+  //   padding: 12px 58px;
+  // }
 }
 
 .container {
@@ -132,6 +132,10 @@ a {
   line-height: 1.2;
   color: #2B2A26;
   text-transform: uppercase;
+
+  &--accent {
+    color: #FBC30A;
+  }
 }
 
 .search-form {
