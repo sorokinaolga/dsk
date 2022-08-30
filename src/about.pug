@@ -1,0 +1,49 @@
+doctype html
+html(lang="ru")
+  include html/head
+  body
+    include html/header
+    main
+      section.page-top.page-top--min
+        .container
+          ol.breadcrumbs
+            li.breadcrumbs__link
+              a(href="index.html") Главная
+            li.breadcrumbs__link
+              span О компании
+          h1.main-title О нас
+      section.block-text-main
+        .container
+          .block-text-main__text
+            h2.section-title.section-title--minmargin Текстовый блок
+            p.block-text-main__strong Цемент — искусственное неорганическое гидравлическое вяжущее вещество. Один из основных строительных материалов.
+            p.block-text-main__usual При взаимодействии с водой, водными растворами солей и другими жидкостями образует пластичную массу которая затем затвердевает и превращается в камневидное тело. В основном используется для изготовления бетона и строительных растворов. 
+            p.block-text-main__usual Цемент является гидравлическим вяжущим и обладает способностью набирать прочность во влажных условиях, чем принципиально отличается от некоторых других минеральных вяжущих — (воздушной извести), которые твердеют только на воздухе.
+            p.block-text-main__usual Марка цемента — условная величина, которая обозначает, что прочность при сжатии будет не ниже обозначенной марки (200, 300, 400, 500, 600)
+          .block-text-main__img
+            img(src="./img/text-img-2.jpg", width="553", height="396", alt="")
+      section.gallery__wrapper
+        .container
+          h2.section-title.section-title--accent Галерея изображений
+          .gallery
+            img.gallery__img.gallery__img--large-left(src="./img/gallery-1.jpg", height="292", alt="")
+            img.gallery__img(src="./img/gallery-2.jpg", height="292", alt="")
+            img.gallery__img(src="./img/gallery-3.jpg", height="292", alt="")
+            img.gallery__img(src="./img/gallery-4.jpg", height="292", alt="")
+            img.gallery__img(src="./img/gallery-5.jpg", height="292", alt="")
+            img.gallery__img.gallery__img--large-right(src="./img/gallery-6.jpg", height="292", alt="")
+      section.documents
+        .container
+          h2.section-title Документы
+          ul.documents__list
+            li.documents__item
+              img.documents__item-img(src="./img/documents-1.png", height="396", width="277", alt="")
+            li.documents__item
+              img.documents__item-img(src="./img/documents-1.png", height="396", width="277", alt="")
+            li.documents__item
+              img.documents__item-img(src="./img/documents-1.png", height="396", width="277", alt="")
+            li.documents__item
+              img.documents__item-img(src="./img/documents-1.png", height="396", width="277", alt="")
+    include html/footer
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js")
+    script(src="js/app.min.js")
