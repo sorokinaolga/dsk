@@ -1,5 +1,5 @@
 @import 'normalize';
-// @import 'jquery.fancybox.min';
+@import 'jquery.fancybox.min';
 @import 'swiper-bundle.min';
 // @import 'jquery-ui.min';
 @import 'fonts';
@@ -9,6 +9,7 @@
 
 @import 'header';
 @import 'footer';
+@import 'feedback';
 
 @import 'index';
 @import 'beton';
