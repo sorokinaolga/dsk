@@ -4,11 +4,34 @@ html(lang="ru")
   body
     include html/header
     main
-      section.page-not-found
+      section.contacts
         .container
-          h1.page-not-found__title 404
-          p.page-not-found__text Извините, запрашиваемая страница не найдена
-          a.btn.btn--main(href="index.html") Главная страница
+          .contacts__content
+            h3.contacts__name ООО «Дорожно Строительная Компания - 7»
+            dl.contacts__list
+              dt.contacts__item-title Адрес
+              dd.contacts__item-desc г. Волгоград, 3-я улица строителей, д. 25, оф. 12
+              dt.contacts__item-title Телефон
+              dd.contacts__item-desc +7  927 510 90 09
+              dt.contacts__item-title Телефон
+              dd.contacts__item-desc +7 937 080-90-09
+              dt.contacts__item-title Почта
+              dd.contacts__item-desc ooo-dsk7@mail.ru
+          .contacts__form-wrapper
+            h3.contacts__form-title Форма обратной связи
+            p.contacts__form-text * Обязательные поля для заполнения
+            p.contacts__form-text ** Обязательные поля на выбор
+            form.contacts__form
+              input.contacts__form-input(type="text", name="", placeholder="Имя*")
+              input.contacts__form-input(type="email", name="", placeholder="E-mail**")
+              input.contacts__form-input(type="tel", name="", placeholder="Телефон**")
+              textarea.contacts__form-input(name="", rows="5" placeholder="Сообщение*")
+              p.contacts__form-text Нажимая на кнопку, Вы соглашаетесь с Политикой конфиденциальности
+              button.btn.btn--main.contacts__form-btn(type="submit") Отправить заявку
+      section.contacts__map
+        .container
+          h2.section-title.contacts__map-title Мы на карте
+          <iframe class="contacts__map-frame" src="https://yandex.ru/map-widget/v1/?um=constructor%3Adfea59669f1259094c95ff2a2a82df10a3b86d113ad9e3f70cf6321e9afe56ee&amp;source=constructor" width="1166" height="507" frameborder="0"></iframe>
     include html/footer
     script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js")
     script(src="js/app.min.js")

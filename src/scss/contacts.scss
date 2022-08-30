@@ -1,0 +1,120 @@
+.contacts {
+  padding: 65px 0 250px;
+
+  .container {
+    position: relative;
+    
+    &::before {
+      position: absolute;
+      content: "";
+      width: 323px;
+      height: 323px;
+      background-image: url(../img/bg-circle-left.svg);
+      background-repeat: no-repeat;
+      top: -20px;
+      left: -380px;
+    }
+  }
+
+  &__content {
+    max-width: 771px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    padding: 40px 30px;
+  }
+
+  &__name {
+    font-family: $ff-main-bold;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.4;
+    color: #2B2A26;
+  }
+
+  &__item-title {
+    font-family: $ff-main-bold;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.4;
+    color: #2B2A26;
+    margin: 40px 0 10px;
+  }
+
+  &__item-desc {
+    font-family: $ff-main;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.4;
+    color: #2B2A26;
+    margin: 0;
+  }
+
+  &__form-wrapper {
+    position: absolute;
+    right: 0;
+    top: 155px;
+    max-width: 474px;
+    padding: 40px 50px;
+    background: #2B2A26;
+    border-radius: 10px;
+    background-image: url(../img/bg-form.png);
+    background-position: right -100px;
+    background-size: cover;
+  }
+
+  &__form-title {
+    font-family: $ff-accent-bold;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.2;
+    text-transform: uppercase;
+    color: #FBC30A;
+    margin: 0 0 15px;
+  }
+
+  &__form-text {
+    font-family: $ff-main;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.3;
+    color: #A2A2A2;
+    margin: 0 0 5px;
+  }
+
+  &__form {
+    margin: 10px 0 0;
+  }
+
+  &__form-input {
+    background: #F5F5F5;
+    border-radius: 10px;
+    border: none;
+    width: 100%;
+    padding: 12px 10px;
+    margin: 0 0 20px;
+    font-family: $ff-accent;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    text-transform: capitalize;
+    color: #828282;
+  }
+
+  &__form-btn {
+    margin-top: 15px;
+  }
+
+  &__map {
+    padding-bottom: 100px;
+  }
+
+  &__map-title {
+    margin-bottom: 25px;
+  }
+
+  &__map-frame {
+    max-width: 100%;
+    border-radius: 10px;
+  }
+}
