@@ -1,0 +1,14 @@
+doctype html
+html(lang="ru")
+  include html/head
+  body
+    include html/header
+    main
+      section.page-not-found
+        .container
+          h1.page-not-found__title 404
+          p.page-not-found__text Извините, запрашиваемая страница не найдена
+          a.btn.btn--main(href="index.html") Главная страница
+    include html/footer
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js")
+    script(src="js/app.min.js")
