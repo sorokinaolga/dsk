@@ -27,7 +27,7 @@ $(document).ready(function () {
   if ($('*').is('.js-promo-slider')) {
     const sliderPromo = new Swiper('.js-promo-slider', {
       slidesPerView: 1,
-      spaceBetween: 300,
+      spaceBetween: 1000,
       navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",

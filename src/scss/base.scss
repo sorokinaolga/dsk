@@ -118,10 +118,20 @@ a {
   font-family: $ff-accent-black;
   font-weight: 900;
   font-size: 64px;
-  line-height: 78px;
+  line-height: 1.2;
   text-transform: uppercase;
   color: #2B2A26;
   margin: 0 0 20px;
+
+  @media (max-width: 1150px) {
+    font-size: 55px;
+  }
+  @media (max-width: 860px) {
+    font-size: 45px;
+  }
+  @media (max-width: 700px) {
+    font-size: 35px;
+  }
 }
 
 .main-title {
@@ -142,6 +152,11 @@ a {
   line-height: 1.2;
   color: #2B2A26;
   text-transform: uppercase;
+
+  @media (max-width: 500px) {
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
 
   &--accent {
     color: #FBC30A;
