@@ -79,6 +79,18 @@ a {
       background: $color-light;
     }
   }
+
+  &--main-black {
+    font-family: $ff-accent-bold;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    padding: 15px 36px;
+
+    &:hover {
+      background: $color-dark;
+    }    
+  }
 }
 
 .container {
@@ -92,6 +104,16 @@ a {
   @media (max-width: 768px) {
     padding: 0 15px;
   }
+}
+
+.title {
+  font-family: $ff-accent-black;
+  font-weight: 900;
+  font-size: 64px;
+  line-height: 78px;
+  text-transform: uppercase;
+  color: #2B2A26;
+  margin: 0 0 20px;
 }
 
 .main-title {
@@ -527,7 +549,9 @@ a {
   border-right: 0.5px solid #2B2A26;
   border-radius: 50%;
   padding: 10px;
-  width: calc(50% - 97px);
+  max-width: 50%;
+  aspect-ratio: 1 / 1;
+  width: max-content;
   height: max-content;
 
   &::before,

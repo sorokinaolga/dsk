@@ -1,101 +1,199 @@
 .promo {
-  padding: 30px 0 64px;
-
-  @media (max-width: 1200px) {
-    padding: 50px 0;
-  }
-
-  .container {
-    text-align: center;
-  }
+  background: #F5F5F5;
 
   &__slide {
-    padding: 50px 0 64px;
-    text-align: left;
-
-    @media (max-width: 1200px) {
-      padding: 0;
-    }
-
-    @media (max-width: 768px) {
+    .container {
       display: flex;
-      flex-direction: column;
+      justify-content: space-between;
+      gap: 30px;
+      position: relative;
+    
+      &::before {
+        position: absolute;
+        content: "";
+        width: 323px;
+        height: 323px;
+        background-image: url(../img/bg-circle-left.svg);
+        background-repeat: no-repeat;
+        top: -160px;
+        left: -360px;
+      }
     }
   }
 
-  &__text {
-    max-width: 565px;
+  &__text-container {
+    width: calc(45% - 15px);
+    padding: 110px 0 70px 0;
+  }
 
-    @media (max-width: 1200px) {
-      max-width: 50%;
-    }
+  &__text {   
+    font-family: $ff-accent;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.6;
+    color: #2B2A26;
+    margin: 0 0 40px;
+  }
 
-    @media (max-width: 768px) {
-      max-width: 100%;
-    }
-
-    p {
-      margin: 17px 0 31px;
-      font-size: 25px;
-      line-height: 1.35;
-      color: $color-main;
-
-      @media (max-width: 992px) {
-        font-size: 20px;
-      }
-    }
-
-    .btn {
-      @media (max-width: 768px) {
-        display: none;
-      }
-    }
+  &__img-container {
+    position: relative;
+    width: calc(55% - 15px);
   }
 
   &__img {
     position: absolute;
-    right: 0;
-    top: 0;
-    object-fit: contain;
-    z-index: -1;
+    top: -20%;
+    right: -60%;
 
-    @media (max-width: 1200px) {
-      width: 50%;
-      height: auto;
-    }
+    border: 0.5px solid #2B2A26;
+    border-radius: 50%;
+    padding: 10px;
+    aspect-ratio: 1 / 1;
+    width: max-content;
+    height: max-content;
 
-    @media (max-width: 768px) {
-      position: relative;
+    img {
+      max-width: 924px;
+      max-height: 924px;
       width: 100%;
+      height: 100%;
+      aspect-ratio: 1 / 1;
+      border-radius: 50%;
+      object-fit: cover;
     }
   }
 
-  .promo__pagination {
-    margin-top: 40px;
+  &__btn {
+    margin-bottom: 100px;
+  }
 
-    @media (max-width: 1200px) {
-      margin-top: 20px;
+  &__contacts {
+    position: relative;
+    display: flex;
+    gap: 11px;
+    padding: 0 0 0 39px;
+
+    &::before,
+    &::after {
+      position: absolute;
+      content: "";
+      width: 24px;
+      height: 1px;
+      border: 1px solid #2B2A26;
     }
 
-    .swiper-pagination-bullet {
-      background: $color-accent;
-      width: 10px;
-      height: 10px;
-      margin: 0 8px;
-      opacity: 1;
+    &::before {
+      left: 0;
+      top: 12px;
+    }
+    &::after {
+      left: 148px;
+      top: 12px;
+    }
+  }
 
-      &:not(.swiper-pagination-bullet-active):hover {
-        background-color: #E2E2E2;
+  &__contact {
+    transition: all 0.3s ease;
+
+    &:hover {
+      color: #FBC30A;
+
+      svg path,
+      svg circle {
+        transition: all 0.3s ease;
+        fill: #FBC30A;
+      }
+
+      .header__contact-cicle {
+        fill: none;
+        stroke: #FBC30A;
+      }
+    }
+  }
+
+  .swiper-button-next {
+    width: 38px;
+    height: 38px;
+    content: "";
+    top: calc(100% - 90px);
+    left: 50%;
+    border-radius: 50%;
+    border: 1px solid rgb(251, 195, 10);
+    background: rgb(251, 195, 10);
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+      border-color: #2B2A26;
+      background: #2B2A26;
+
+      &::after {
+        background-image: url(../img/icons/icons.svg#i-arrow-hover);
       }
     }
 
-    .swiper-pagination-bullet-active {
-      border: 1px solid $color-accent;
-      background: transparent;
-      transform: scale(1.6);
-      pointer-events: none;
+    &::after {
+      position: absolute;
+      content: "";
+      width: 34px;
+      height: 38px;
+      background-image: url(../img/icons/icons.svg#i-arrow);
+      background-size: 34px auto;
+      background-position: left center;
+      background-repeat: no-repeat;
+      top: 0;
+      left: -12px;
     }
   }
+
+  .swiper-button-prev {
+    width: 38px;
+    height: 38px;
+    content: "";
+    top: calc(100% - 90px);
+    left: 45%;
+    border-radius: 50%;
+    border: 1px solid rgb(251, 195, 10);
+    background: rgb(251, 195, 10);
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+      border-color: #2B2A26;
+      background: #2B2A26;
+
+      &::after {
+        background-image: url(../img/icons/icons.svg#i-arrow-hover);
+      }
+    }
+
+    &::after {
+      position: absolute;
+      content: "";
+      width: 34px;
+      height: 38px;
+      background-image: url(../img/icons/icons.svg#i-arrow);
+      background-size: 34px auto;
+      background-position: left center;
+      background-repeat: no-repeat;
+      transform: rotate(180deg);
+      top: 0;
+      right: -12px;
+    }
+  }
+
+  .swiper-button-next.swiper-button-disabled, 
+  .swiper-button-prev.swiper-button-disabled {
+    opacity: 1;
+    cursor: auto;
+    pointer-events: none;
+    background: transparent;
+    border-color: rgb(251, 195, 10);
+
+    &::after {
+      background-image: url(../img/icons/icons.svg#i-arrow-hover);
+    }
+}
 }
 
 .advantages {
