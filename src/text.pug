@@ -1,0 +1,143 @@
+doctype html
+html(lang="ru")
+  include html/head
+  body
+    include html/header
+    main
+      section.page-top.page-top--min
+        .container
+          ol.breadcrumbs
+            li.breadcrumbs__link
+              a(href="index.html") Главная
+            li.breadcrumbs__link
+              span Текстовая
+          h1.main-title Текстовая
+      section.main
+        .container
+          .image--right
+            img(src="./img/text-img-2.jpg", width="461", height="461", alt="")
+          h2.section-title.section-title--minmargin Текстовый блок
+          p.block-text-main__subtitle Цемент — искусственное неорганическое гидравлическое вяжущее вещество. Один из основных строительных материалов.
+          p.block-text-main__strong При взаимодействии с водой, водными растворами солей и другими жидкостями образует пластичную массу.
+          p.block-text-main__usual При взаимодействии с водой, водными растворами солей и другими жидкостями образует пластичную массу которая затем затвердевает и превращается в камневидное тело. В основном используется для изготовления бетона и строительных растворов. 
+          p.block-text-main__usual Цемент является гидравлическим вяжущим и обладает способностью набирать прочность во влажных условиях, чем принципиально отличается от некоторых других минеральных вяжущих — (воздушной извести), которые твердеют только на воздухе.
+          p.block-text-main__usual Марка цемента — условная величина, которая обозначает, что прочность при сжатии будет не ниже обозначенной марки (200, 300, 400, 500, 600)
+          .claerfix
+      section
+        .container
+          ul.unordered__list
+            li.unordered__item Ненумерованный список
+            li.unordered__item Ненумерованный список
+            li.unordered__item Ненумерованный список
+            li.unordered__item Ненумерованный список
+            li.unordered__item Ненумерованный список
+          ol.ordered__list
+            li.ordered__item Нумерованный список
+            li.ordered__item Нумерованный список
+            li.ordered__item Нумерованный список
+            li.ordered__item Нумерованный список
+            li.ordered__item Нумерованный список
+      section.main
+        .container
+          h1.section-title Примеры форматирования
+          .table__container
+            h3.table__title Раствор цементный
+            table.table
+              thead
+                tr
+                  th Марка строительного
+                    <br/>
+                    | раствора ГОСТ
+                  th Норма
+                    <br/>
+                    | подвижности
+                  th Цена
+                    <br/>
+                    | с НДС за 1 м³
+              tbody
+                tr
+                  td(data-header="Марка строительного раствора ГОСТ") Раствор М-25
+                  td(data-header="Норма подвижности") Пк3
+                  td(data-header="Цена с НДС за 1 м³") 1 900
+                tr
+                  td(data-header="Марка строительного раствора ГОСТ") Раствор М-50
+                  td(data-header="Норма подвижности") Пк3
+                  td(data-header="Цена с НДС за 1 м³") 2 350
+                tr
+                  td(data-header="Марка строительного раствора ГОСТ") Раствор М-75
+                  td(data-header="Норма подвижности") Пк3
+                  td(data-header="Цена с НДС за 1 м³") 2 550
+                tr
+                  td(data-header="Марка строительного раствора ГОСТ") Раствор М-100
+                  td(data-header="Норма подвижности") Пк3
+                  td(data-header="Цена с НДС за 1 м³") 2 850
+                tr
+                  td(data-header="Марка строительного раствора ГОСТ") Раствор М-150
+                  td(data-header="Норма подвижности") Пк2
+                  td(data-header="Цена с НДС за 1 м³") 3 400
+                tr
+                  td(data-header="Марка строительного раствора ГОСТ") Раствор М-200
+                  td(data-header="Норма подвижности") Пк2
+                  td(data-header="Цена с НДС за 1 м³") 3 900
+          .table__container
+            h3.table__title Бетон строительный
+            table.table
+              thead
+                tr
+                  th Марка (класс)
+                    <br/>
+                    | бетона ГОСТ
+                  th Норма
+                    <br/>
+                    | подвижности
+                  th Марка по 
+                    <br/>
+                    | водонепроницаемости W
+                  th Цена
+                    <br/>
+                    | с НДС за 1 м³
+              tbody
+                tr
+                  td(data-header="Марка (класс) бетона ГОСТ") Бетон М-100 (В 7.5)
+                  td(data-header="Норма подвижности") Пк3
+                  td(data-header="Марка по водонепроницаемости W") —
+                  td(data-header="Цена с НДС за 1 м³") 4 250
+                tr
+                  td(data-header="Марка (класс) бетона ГОСТ") Бетон М-150 (В 12.5)
+                  td(data-header="Норма подвижности") Пк4
+                  td(data-header="Марка по водонепроницаемости W") W4  F100
+                  td(data-header="Цена с НДС за 1 м³") 4 400
+                tr
+                  td(data-header="Марка (класс) бетона ГОСТ") Бетон М-200 (В 15)
+                  td(data-header="Норма подвижности") Пк4
+                  td(data-header="Марка по водонепроницаемости W") W4  F100 / W6 F150
+                  td(data-header="Цена с НДС за 1 м³") 4 600
+                tr
+                  td(data-header="Марка (класс) бетона ГОСТ") Бетон М-250 (В 20)
+                  td(data-header="Норма подвижности") Пк4
+                  td(data-header="Марка по водонепроницаемости W") W4  F100 / W6 F150
+                  td(data-header="Цена с НДС за 1 м³") 4 850
+                tr
+                  td(data-header="Марка (класс) бетона ГОСТ") Бетон М-300 (В 22.5)
+                  td(data-header="Норма подвижности") Пк4
+                  td(data-header="Марка по водонепроницаемости W") W4  F100
+                  td(data-header="Цена с НДС за 1 м³") 5 050
+                tr
+                  td(data-header="Марка (класс) бетона ГОСТ") Бетон М-350 (В 30)
+                  td(data-header="Норма подвижности") Пк4
+                  td(data-header="Марка по водонепроницаемости W") W6  F150 / W4 F75
+                  td(data-header="Цена с НДС за 1 м³") 5 200
+                tr
+                  td(data-header="Марка (класс) бетона ГОСТ") Бетон М-450 (В 35)
+                  td(data-header="Норма подвижности") Пк4
+                  td(data-header="Марка по водонепроницаемости W") W6  F150 / W8 F100
+                  td(data-header="Цена с НДС за 1 м³") 5 400
+                tr
+                  td(data-header="Марка (класс) бетона ГОСТ") Бетон М-450 (В 35)
+                  td(data-header="Норма подвижности") Пк4
+                  td(data-header="Марка по водонепроницаемости W") W6  F150
+                  td(data-header="Цена с НДС за 1 м³") 5 700
+      include html/feedback-modal
+    include html/footer
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js")
+    script(src="js/app.min.js")
