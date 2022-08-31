@@ -151,7 +151,7 @@
     height: 38px;
     content: "";
     top: calc(100% - 90px);
-    left: 45%;
+    left: calc(50% - 75px);
     border-radius: 50%;
     border: 1px solid rgb(251, 195, 10);
     background: rgb(251, 195, 10);
@@ -241,7 +241,6 @@
     font-family: $ff-main;
     font-size: 16px;
     line-height: 1.6;
-    text-transform: capitalize;
     color: #2B2A26;
     margin: 0;
   }
