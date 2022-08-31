@@ -79,12 +79,12 @@ html(lang="ru")
             .form__remarks
               p * Обязательные поля для заполнения
               p ** Обязательные поля на выбор
-            form.form__callback
+            form.form__callback(id="feedback" action="#")
               .form__input-container
-                input.form__input(type="text", name="", placeholder="Имя*")
-                input.form__input(type="tel", name="", placeholder="Телефон**")
-                input.form__input(type="email", name="", placeholder="E-mail**")
-                input.form__input(type="text", name="", placeholder="Комментарий")
+                input.form__input(type="text", id="feedbackName", name="feedbackName", placeholder="Имя*")
+                input.form__input(type="tel", id="feedbackPhone", name="feedbackPhone", placeholder="Телефон**")
+                input.form__input(type="email", id="feedbackEmail", name="feedbackEmail", placeholder="E-mail**")
+                input.form__input(type="text", id="feedbackComment", name="feedbackComment", placeholder="Комментарий")
               p.form__callback-text Нажимая на кнопку, Вы соглашаетесь с Политикой конфиденциальности
               button.btn.btn--main(type="submit") Отправить заявку
       section.main.block-with-decor

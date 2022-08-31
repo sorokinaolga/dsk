@@ -21,11 +21,11 @@ html(lang="ru")
             h3.contacts__form-title Форма обратной связи
             p.contacts__form-text * Обязательные поля для заполнения
             p.contacts__form-text ** Обязательные поля на выбор
-            form.contacts__form
-              input.contacts__form-input(type="text", name="", placeholder="Имя*")
-              input.contacts__form-input(type="email", name="", placeholder="E-mail**")
-              input.contacts__form-input(type="tel", name="", placeholder="Телефон**")
-              textarea.contacts__form-input(name="", rows="5" placeholder="Сообщение*")
+            form.contacts__form(id="feedback" action="#")
+              input.contacts__form-input(type="text", id="feedbackName", name="feedbackName", placeholder="Имя*")
+              input.contacts__form-input(type="email", id="feedbackEmail", name="feedbackEmail", placeholder="E-mail**")
+              input.contacts__form-input(type="tel", id="feedbackPhone", name="feedbackPhone", placeholder="Телефон**")
+              textarea.contacts__form-input( id="feedbackComment", name="feedbackComment", rows="5" placeholder="Сообщение*")
               p.contacts__form-text Нажимая на кнопку, Вы соглашаетесь с Политикой конфиденциальности
               button.btn.btn--main.contacts__form-btn(type="submit") Отправить заявку
       section.contacts__map

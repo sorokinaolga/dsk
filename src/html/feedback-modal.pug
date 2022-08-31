@@ -1,11 +1,11 @@
 .feedback__form-wrapper(id="feedback-popup")
-  form.feedback__form(id="feedback" action="#")
+  form.feedback__form(id="feedback-modal" action="#")
     h2.feedback__form-title Форма обратной связи
     p.feedback__form-text * Обязательные поля для заполнения
     .feedback__flex
-      input.feedback__input(type="text", name="", placeholder="Имя*")
-      input.feedback__input(type="tel", name="", placeholder="Телефон*")
+      input.feedback__input(type="text", id="feedbackModalName", name="feedbackModalName", placeholder="Имя*")
+      input.feedback__input(type="tel", id="feedbackModalPhone", name="feedbackModalPhone", placeholder="Телефон*")
       button.btn.btn--main.feedback__btn(type="submit") Отправить заявку
     p.feedback__form-text Нажимая на кнопку, Вы соглашаетесь с Политикой конфиденциальности
-  //- .feedback__success
-  //-   p.feedback__success-text Ваша заявка успешно отправлена!
+.feedback__success(id="feedback-success")
+  p.feedback__success-text Ваша заявка успешно отправлена!
