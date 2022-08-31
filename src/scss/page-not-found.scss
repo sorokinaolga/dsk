@@ -2,14 +2,12 @@
   padding: 60px 0 100px;
   overflow-x: hidden;
 
+  @media (max-width: 992px) {
+    padding: 50px 0;
+  }
+
   .container {
     position: relative;
-    background: #2B2A26;
-    background-image: url(../img/bg-form.png);
-    background-size: cover;
-    border-radius: 10px;
-    padding: 50px 0 90px;
-    text-align: center;
     
     &::before {
       position: absolute;
@@ -35,6 +33,19 @@
     }
   }
 
+  &__content {
+    background: #2B2A26;
+    background-image: url(../img/bg-form.png);
+    background-size: cover;
+    border-radius: 10px;
+    padding: 50px 20px 90px;
+    text-align: center;
+
+    @media (max-width: 600px) {
+      padding: 50px 20px;
+    }
+  }
+
   &__title {
     font-family: $ff-accent-bold;
     font-weight: 700;
@@ -43,6 +54,11 @@
     text-transform: uppercase;
     color: #FBC30A;
     margin: 0;
+
+    @media (max-width: 600px) {
+      font-size: 80px;
+      line-height: 1.4;
+    }
   }
 
   &__text {
@@ -54,5 +70,13 @@
     color: #FFFFFF;
     max-width: 860px;
     margin: 0 auto 30px;
+
+    @media (max-width: 600px) {
+      max-width: 100%;
+      font-size: 28px;
+    }
+    @media (max-width: 400px) {
+      font-size: 20px;
+    }
   }
 }
