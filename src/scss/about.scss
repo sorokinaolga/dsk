@@ -77,6 +77,10 @@
   padding: 0 0 100px;
   overflow-x: hidden;
 
+  @media (max-width: 768px) {
+    padding: 0 0 50px;
+  }
+
   .container {
     position: relative;
 

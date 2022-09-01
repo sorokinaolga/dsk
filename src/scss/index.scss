@@ -286,6 +286,10 @@
 .advantages {
   padding: 100px 0;
 
+  @media (max-width: 768px) {
+    padding: 50px 0;
+  }
+
   &__list {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -341,6 +345,10 @@
   background: linear-gradient(180deg, rgba(43,42,38,1) 0%, rgba(43,42,38,1) 75%, rgb(255, 255, 255) 75.1%, rgb(255, 255, 255) 100%);
   padding: 60px 0 90px;
   overflow-x: hidden;
+
+  @media (max-width: 768px) {
+    padding: 60px 0;
+  }
 
   &__list {
     position: relative;
@@ -475,6 +483,10 @@
   padding: 50px 0 100px;
   overflow-x: hidden;
 
+  @media (max-width: 768px) {
+    padding: 50px 0;
+  }
+
   .container {
     position: relative;
     
@@ -558,5 +570,9 @@
     text-transform: capitalize;
     color: #2B2A26;
     margin: 25px 0;
+
+    @media (max-width: 768px) {
+      margin: 15px 0;
+    }
   }
 }
