@@ -35,46 +35,57 @@ $(document).ready(function () {
     });
   }
 
-    // feedback form
-    const feedbackForm = $('#feedback');
-    feedbackForm.submit(function (evt) { 
-      evt.preventDefault();
-      const xdata = feedbackForm.serializeArray();
-      // $.ajax({
-      //   async: true,
-      //   type: 'POST',
-      //   url: url,
-      //   dataType: 'html',
-      //   data: JSON.stringify(xdata),
-      //   success: function() {
-          $.fancybox.open({
-            src: '#feedback-success',
-            type: 'inline'
-          });
-      //   }
-      // });
-    });
+  // feedback form
+  const feedbackForm = $('#feedback');
+  feedbackForm.submit(function (evt) { 
+    evt.preventDefault();
+    const xdata = feedbackForm.serializeArray();
+    // $.ajax({
+    //   async: true,
+    //   type: 'POST',
+    //   url: url,
+    //   dataType: 'html',
+    //   data: JSON.stringify(xdata),
+    //   success: function() {
+        $.fancybox.open({
+          src: '#feedback-success',
+          type: 'inline'
+        });
+    //   }
+    // });
+  });
 
-    // feedbackModal form
-    const feedbackModalForm = $('#feedback-modal');
-    feedbackModalForm.submit(function (evt) { 
-      evt.preventDefault();
-      const xdata = $('#feedback-modal').serializeArray();
-      // $.ajax({
-      //   async: true,
-      //   type: 'POST',
-      //   url: url,
-      //   dataType: 'html',
-      //   data: JSON.stringify(xdata),
-      //   success: function() {
-          $.fancybox.close({
-            src: '#feedback-popup',
-          });
-          $.fancybox.open({
-            src: '#feedback-success',
-            type: 'inline'
-          });
-      //   }
-      // });
-    });
+  // feedbackModal form
+  const feedbackModalForm = $('#feedback-modal');
+  feedbackModalForm.submit(function (evt) { 
+    evt.preventDefault();
+    const xdata = $('#feedback-modal').serializeArray();
+    // $.ajax({
+    //   async: true,
+    //   type: 'POST',
+    //   url: url,
+    //   dataType: 'html',
+    //   data: JSON.stringify(xdata),
+    //   success: function() {
+        $.fancybox.close({
+          src: '#feedback-popup',
+        });
+        $.fancybox.open({
+          src: '#feedback-success',
+          type: 'inline'
+        });
+    //   }
+    // });
+  });
+
+  if ($('*').is('#js-contacts-map')) {
+    const map = $('#js-contacts-map');
+    map.click(function() {
+      $('#js-contacts-map iframe').attr('style', '');
+    }),
+    map.mouseleave(function() {
+      console.log('over');
+      $('#js-contacts-map iframe').attr('style', 'pointer-events: none');
+    })
+  }
 });
