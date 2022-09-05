@@ -150,10 +150,6 @@
     position: absolute;
     top: 8px;
 
-    @media (max-width: 1050px) {
-      top: 15px;
-    }
-
     @media (max-width: 992px) {
       top: 0;
       position: relative;
@@ -193,10 +189,14 @@
     height: 24px;
     margin: 14px 0;
 
-    @media (max-width: 1050px) {
-      flex-direction: column;
-      gap: 10px;
-      height: max-content;
+    @media (min-width: 992px) and (max-width: 1060px) { 
+      font-size: 14px;
+      height: 18px;
+      gap: 15px;
+
+      svg {
+        height: 18px;
+      }
     }
 
     @media (max-width: 992px) {

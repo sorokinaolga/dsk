@@ -69,12 +69,6 @@
     }
   }
 
-  &__official-item {
-    &--underline {
-      text-decoration: underline;
-    }
-  }
-
   &__menu {
     display: grid;
     grid-template-columns: repeat(2, 1fr);

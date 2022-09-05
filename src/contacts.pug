@@ -10,7 +10,7 @@ html(lang="ru")
             h3.contacts__name ООО «Дорожно Строительная Компания - 7»
             dl.contacts__list
               dt.contacts__item-title Адрес
-              dd.contacts__item-desc г. Волгоград, 3-я улица строителей, д. 25, оф. 12
+              dd.contacts__item-desc г. Волгоград, 3-я улица Строителей, д. 25, оф. 12
               dt.contacts__item-title Телефон
               dd.contacts__item-desc +7  927 510 90 09
               dt.contacts__item-title Телефон
@@ -26,12 +26,14 @@ html(lang="ru")
               input.contacts__form-input(type="email", id="feedbackEmail", name="feedbackEmail", placeholder="E-mail**")
               input.contacts__form-input(type="tel", id="feedbackPhone", name="feedbackPhone", placeholder="Телефон**")
               textarea.contacts__form-input( id="feedbackComment", name="feedbackComment", rows="5" placeholder="Сообщение*")
-              p.contacts__form-text Нажимая на кнопку, Вы соглашаетесь с Политикой конфиденциальности
+              p.contacts__form-text Нажимая на кнопку, Вы соглашаетесь с 
+                a.link--underline(href="text.html" target="_blank") Политикой конфиденциальности
               button.btn.btn--main.contacts__form-btn(type="submit") Отправить заявку
       section.contacts__map
         .container
           h2.section-title.contacts__map-title Мы на карте
-          <iframe class="contacts__map-frame" src="https://yandex.ru/map-widget/v1/?um=constructor%3Adfea59669f1259094c95ff2a2a82df10a3b86d113ad9e3f70cf6321e9afe56ee&amp;source=constructor" width="1166" height="507"></iframe>
+          div
+            <iframe class="contacts__map-frame" src="https://yandex.ru/map-widget/v1/?um=constructor%3Adfea59669f1259094c95ff2a2a82df10a3b86d113ad9e3f70cf6321e9afe56ee&amp;source=constructor" width="1166" height="507" scroll="false"></iframe>
       include html/feedback-modal
     include html/footer
     script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js")

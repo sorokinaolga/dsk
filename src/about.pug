@@ -26,24 +26,34 @@ html(lang="ru")
         .container
           h2.section-title.section-title--accent Галерея изображений
           .gallery
-            img.gallery__img.gallery__img--large-left(src="./img/gallery-1.jpg", height="292", alt="")
-            img.gallery__img(src="./img/gallery-2.jpg", height="292", alt="")
-            img.gallery__img(src="./img/gallery-3.jpg", height="292", alt="")
-            img.gallery__img(src="./img/gallery-4.jpg", height="292", alt="")
-            img.gallery__img(src="./img/gallery-5.jpg", height="292", alt="")
-            img.gallery__img.gallery__img--large-right(src="./img/gallery-6.jpg", height="292", alt="")
+            a.gallery__img.gallery__img--large-left(href="@img/gallery-1.jpg" data-fancybox="gallery-img") 
+              img(src="@img/gallery-1.jpg", height="292", alt="")
+            a.gallery__img(href="@img/gallery-2.jpg" data-fancybox="gallery-img") 
+              img(src="@img/gallery-2.jpg", height="292", alt="")
+            a.gallery__img(href="@img/gallery-3.jpg" data-fancybox="gallery-img") 
+              img(src="@img/gallery-3.jpg", height="292", alt="")
+            a.gallery__img(href="@img/gallery-4.jpg" data-fancybox="gallery-img")
+              img(src="@img/gallery-4.jpg", height="292", alt="")
+            a.gallery__img(href="@img/gallery-5.jpg" data-fancybox="gallery-img") 
+              img(src="@img/gallery-5.jpg", height="292", alt="")
+            a.gallery__img.gallery__img--large-right(href="@img/gallery-6.jpg" data-fancybox="gallery-img") 
+              img(src="@img/gallery-6.jpg", height="292")
       section.documents
         .container
           h2.section-title Документы
           ul.documents__list
             li.documents__item
-              img.documents__item-img(src="./img/documents-1.png", height="396", width="277", alt="")
+              a(href="@img/documents-1.png" data-fancybox="documnets-img") 
+                img.documents__item-img(src="@img/documents-1.png", height="396", width="277", alt="")
             li.documents__item
-              img.documents__item-img(src="./img/documents-1.png", height="396", width="277", alt="")
+              a(href="@img/documents-1.png" data-fancybox="documnets-img")
+                img.documents__item-img(src="@img/documents-1.png", height="396", width="277", alt="")
             li.documents__item
-              img.documents__item-img(src="./img/documents-1.png", height="396", width="277", alt="")
+              a(href="@img/documents-1.png" data-fancybox="documnets-img") 
+                img.documents__item-img(src="@img/documents-1.png", height="396", width="277", alt="")
             li.documents__item
-              img.documents__item-img(src="./img/documents-1.png", height="396", width="277", alt="")
+              a(href="@img/documents-1.png" data-fancybox="documnets-img") 
+                img.documents__item-img(src="@img/documents-1.png", height="396", width="277", alt="")
       include html/feedback-modal    
     include html/footer
     script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js")
