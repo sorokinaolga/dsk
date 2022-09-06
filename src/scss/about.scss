@@ -103,6 +103,10 @@
       background-size: contain;
       bottom: -70px;
       right: -340px;
+
+      @media (max-width: 768px) {
+        display: none;
+      }
     }
   }
 
