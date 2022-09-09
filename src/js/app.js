@@ -84,7 +84,6 @@ $(document).ready(function () {
       $('#js-contacts-map iframe').attr('style', '');
     }),
     map.mouseleave(function() {
-      console.log('over');
       $('#js-contacts-map iframe').attr('style', 'pointer-events: none');
     })
   }
