@@ -88,3 +88,30 @@ $(document).ready(function () {
     })
   }
 });
+
+const videoContainers = document.querySelectorAll(".text-block__video-container");
+
+videoContainers.forEach( container => {
+  const playButton = $(container.querySelector(".text-block__video-play"));
+  const video = container.querySelector(".text-block__video");
+
+  container.addEventListener('click', function(evt) {
+    if (video.paused == true) {
+      playButton.fadeOut();
+      evt.preventDefault();
+      $(video).get(0).play();
+    } else {
+      playButton.fadeIn();
+      evt.preventDefault();
+      $(video).get(0).pause();
+    }
+  });
+
+  $(video).on('play', function() {
+    playButton.fadeOut();
+  });
+
+  $(video).on('pause', function() {
+    playButton.fadeIn();
+  });
+})
