@@ -9,12 +9,15 @@
     "build": "gulp build --build",
     "zip": "gulp deployZIP --build",
     "svgSprive": "gulp svgSprive",
-    "deploy": "gulp deploy"
+    "deploy": "gulp deploy",
+    "deploy-gp": "gh-pages -d dist"
   },
+  "homepage": "https://sorokinaolga.github.io/dsk",
   "license": "ISC",
   "devDependencies": {
     "browser-sync": "^2.27.7",
     "del": "^6.0.0",
+    "gh-pages": "^5.0.0",
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^8.0.0",
     "gulp-clean-css": "^4.3.0",
